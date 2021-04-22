@@ -47,11 +47,11 @@ void ABaseCharacter::MoveRight(float Value)
 void ABaseCharacter::LMBDown() {
 	if (bAttacking) return;
 	bAttacking = true;
-	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
-	if (AnimInstance && characterAttackMontage) 
-	{
-		AnimInstance->Montage_Play(characterAttackMontage);
-	}
+	//UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	//if (AnimInstance && characterAttackMontage) 
+	//{
+		//AnimInstance->Montage_Play(characterAttackMontage);
+	//}
 }
 
 // Called every frame

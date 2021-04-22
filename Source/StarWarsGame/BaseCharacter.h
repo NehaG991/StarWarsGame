@@ -34,9 +34,13 @@ protected:
 	// called when the right mouse button is pressed
 	void LMBDown();
 
-	// bool for whe the character is attacking
+	// bool for when the character is attacking
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
 		bool bAttacking;
+
+	// integer to see count of combo attack
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat")
+		int32 ComboCount;
 
 	// character attack montage
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Anims")
